@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator BMI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url('https://wallpaperbat.com/img/389282-what-makes-a-diet-heart-healthy-sheknows.jpg');
+            background-size: cover;
+            color: rgb(17, 1, 1);
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"] {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: #ca0808;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .container {
+                max-width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator BMI</h1>
+        <form action="/rezultat" method="post">
+            Inaltime(cm): <input type="text" name="inaltime" placeholder="Ex: 170" required><br>
+            Greutate(kg): <input type="text" name="greutate" placeholder="Ex: 70" required><br>
+            <input type="submit" value="Calculeaza">
+        </form>
+    </div>
+</body>
+</html>
